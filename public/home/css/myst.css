@@ -1,0 +1,123 @@
+/* .animation__shake {
+    -webkit-animation: shake 1500ms;
+    animation: shake 1500ms;
+  }
+  
+  .animation__wobble {
+    -webkit-animation: wobble 1500ms;
+    animation: wobble 1500ms;
+  }
+   */
+  .preloader {
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #f4f6f9;
+    height: 100vh;
+    width: 100%;
+    transition: height 200ms linear;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+  }
+
+  .main-item {
+    padding: 10px;
+    background-color: #fff;
+    width: 100%;
+  }
+  
+  .background-masker {
+    background-color: #fff;
+    position: absolute;
+  }
+  
+  .btn-divide-left {
+    top: 0;
+    left: 25%;
+    height: 100%;
+    width: 5%;
+  }
+  
+  @keyframes placeHolderShimmer {
+    0% {
+      background-position: -800px 0
+    }
+    100% {
+      background-position: 800px 0
+    }
+  }
+  
+  .animated-background {
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background-color: #f6f7f8;
+    background: linear-gradient(to right, #eeeeee 8%, #bbbbbb 18%, #eeeeee 33%);
+    background-size: 800px 104px;
+    height: 70px;
+    position: relative;
+  }
+  
+  .static-background {
+    background-color: #f6f7f8;
+    background-size: 800px 104px;
+    height: 70px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .shared-dom {
+    width: 800px;
+    height: 110px;
+  }
+  .sub-rect {
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin: 20px 20px 20px 0;
+  }
+  .pure-background {
+    background-color: #eee;
+  }
+  
+  .css-dom:empty {
+    width: 180px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 10px 45px rgba(0, 0, 0, .2);
+    background-repeat: no-repeat;
+    
+    background-image:
+    linear-gradient(lightgray, lightgray),
+    linear-gradient(lightgray, lightgray),
+    linear-gradient(lightgray, lightgray),
+    linear-gradient(lightgray, lightgray),
+    linear-gradient(lightgray, lightgray),
+    radial-gradient(circle 12px, lightgray 99%, transparent 0),
+    linear-gradient(lightgray, lightgray),
+    linear-gradient(#fff, #fff); 
+    
+    background-size:
+    180px 170px,
+    160px 12px,
+    120px 12px,
+    100px 12px,
+    130px 12px,
+    24px 24px,
+    80px 12px,
+    280px 100%;
+    
+    background-position:
+    0 0,
+    10px 180px,
+    10px 200px,
+    10px 220px,
+    10px 240px,
+    10px 260px,
+    45px 265px,
+    0 0;   
+  }
